@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-08 11:05:23 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMS0wNTswOToxNDo1NiBBTTsyMjA4"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMS0wNTswOToyMTowMSBBTTsyOzIzMDU="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMTktMTEtMDg7MTE6MDU6MjMgUE07MTsyOTY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hey there! How's your day? Mind giving me a number? Then let's see if its as Odd-ly unique like you, or if its Even-ly as awesome as Maui (the demi-god).&quot;" newline="True"/>
+            <input variable="number"/>
+            <if expression="number % 2 == 1">
+                <then>
+                    <output expression="&quot;it's as odd-ly unique like you&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it's as even-ly as awesome as Maui&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

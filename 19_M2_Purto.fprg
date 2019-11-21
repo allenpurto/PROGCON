@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-18 04:27:46 AM"/>
+        <attribute name="created" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMTktMTEtMTg7MDM6NTA6NDcgQU07Mjg1Mw=="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMTktMTEtMTg7MDQ6Mjc6NDYgQU07MTA7MzAxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="diameter" type="Real" array="False" size=""/>
+            <declare name="area" type="Integer" array="False" size=""/>
+            <declare name="answer" type="String" array="False" size=""/>
+            <output expression="&quot;Welcome to the Journey of Finding Out the Area of your Circle!&quot;" newline="True"/>
+            <output expression="&quot;Would you like to take the Radius route?&quot;" newline="True"/>
+            <input variable="answer"/>
+            <if expression="answer=&quot;Yes&quot;||answer=&quot;yes&quot;">
+                <then>
+                    <output expression="&quot;Cool then. Please input your Radius to proceed on your route.&quot;" newline="True"/>
+                    <input variable="radius"/>
+                    <assign variable="area" expression="pi * (radius^2)"/>
+                    <output expression="area" newline="True"/>
+                    <output expression="&quot;*With you now knowing the Area of your Circle, your journey has ended*&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Does this mean that you would like to take the Diameter routes?&quot;" newline="True"/>
+                    <input variable="answer"/>
+                    <if expression="answer=&quot;Yes&quot;||answer=&quot;yes&quot;">
+                        <then>
+                            <output expression="&quot;Great. Then please input your Diameter to proceed down the route.&quot;" newline="True"/>
+                            <input variable="diameter"/>
+                            <assign variable="area" expression="pi * ((diameter/2)^2)"/>
+                            <output expression="area" newline="True"/>
+                            <output expression="&quot;*With you now knowing the Area of your Circle, your journey has ended*&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Then I am sorry to say that this is where your journey ends. I bid you farewell.&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

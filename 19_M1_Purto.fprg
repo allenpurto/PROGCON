@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 08:26:36 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzA7MjAxOS0xMC0yOTswNzozODo1NiBBTTsyMjA5"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzA7MjAxOS0xMC0yOTswODoyNjozNiBBTTszOzIzMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="add" type="Real" array="False" size=""/>
+            <output expression="&quot;Give me a number, citizen. ^_^&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Give me one more, you genius.&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="Add" expression="num1 + num2"/>
+            <output expression="Add" newline="True"/>
+            <output expression="&quot;MATHEMATICAL!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

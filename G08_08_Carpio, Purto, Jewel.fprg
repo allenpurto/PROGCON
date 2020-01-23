@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Em Jewel Tigson"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 08:02:21 AM"/>
+        <attribute name="created" value="RW0gSmV3ZWwgVGlnc29uO0RFU0tUT1AtVVVKMFRPVjsyMDIwLTAxLTE1OzA2OjM1OjMyIFBNOzM3NzE="/>
+        <attribute name="edited" value="RW0gSmV3ZWwgVGlnc29uO0RFU0tUT1AtVVVKMFRPVjsyMDIwLTAxLTE1OzA3OjMwOjM0IFBNOzI7Mzg3OA=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzE7MjAyMC0wMS0xNzswODo0NjoyMiBBTTszOzIzMDI="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMjM7MDg6MDI6MjEgQU07MTsyOTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hey there, I'm a program created by 3 deities: Carpio, Purto, and Tigson.&quot;" newline="True"/>
+            <output expression="&quot;I am here to compute regular 12-hour time into military time, so you don't have to.&quot;" newline="True"/>
+            <declare name="time" type="Integer" array="False" size=""/>
+            <declare name="add" type="Real" array="False" size=""/>
+            <declare name="answer" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter your time, and I'll do the computing for you. ^_^&quot;" newline="True"/>
+            <output expression="&quot;Please add your minutes. If none, just add 00 on the end.&quot;" newline="True"/>
+            <input variable="time"/>
+            <output expression="&quot;Would you like it at am or pm format?&quot;" newline="True"/>
+            <input variable="answer"/>
+            <if expression="answer = &quot;pm&quot; || answer = &quot;PM&quot; || answer = &quot;Pm&quot;">
+                <then>
+                    <assign variable="add" expression="time + 1200"/>
+                    <output expression="add" newline="True"/>
+                    <output expression="&quot;that's your military time right there ^_^&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="time" newline="True"/>
+                    <output expression="&quot;well, its am, so its the same one that you decided to input hehe ^_^&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

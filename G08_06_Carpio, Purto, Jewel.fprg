@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:44:57 AM"/>
+        <attribute name="created" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMTY7MDI6MTg6MjQgQU07Mjg0MA=="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMTY7MDI6NTA6NTcgQU07NTsyOTU0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzE7MjAyMC0wMS0xNzswODo0NDo1NyBBTTsyOzIzMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hey there, I'm a program created by 3 deities: Carpio, Purto, and Tigson.&quot;" newline="True"/>
+            <output expression="&quot;I am here to convert your pesos into dollares and vice-versa.&quot;" newline="True"/>
+            <declare name="pesos" type="Real" array="False" size=""/>
+            <declare name="dollares" type="Real" array="False" size=""/>
+            <declare name="convert" type="Integer" array="False" size=""/>
+            <declare name="answer" type="String" array="False" size=""/>
+            <output expression="&quot;Would you like to turn your pesos into dollares?&quot;" newline="True"/>
+            <input variable="answer"/>
+            <if expression="answer = &quot;yes&quot; || answer = &quot;Yes&quot;">
+                <then>
+                    <output expression="&quot;Awesome. What's your peso amount?&quot;" newline="True"/>
+                    <input variable="pesos"/>
+                    <assign variable="dollares" expression="pesos / 50.78"/>
+                    <output expression="&quot;Your peso in dollares form is&quot;" newline="True"/>
+                    <output expression="dollares" newline="True"/>
+                    <output expression="&quot;Alright, hopefully knowing that helps you in some way ^_^&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Then would you like to convert your dollares into pesos then?&quot;" newline="True"/>
+                    <input variable="answer"/>
+                    <if expression="answer = &quot;yes&quot; || answer = &quot;Yes&quot;">
+                        <then>
+                            <output expression="&quot;Cool. How much dollares do you have?&quot;" newline="True"/>
+                            <input variable="dollares"/>
+                            <assign variable="pesos" expression="dollares * 50.78"/>
+                            <output expression="pesos" newline="True"/>
+                            <output expression="&quot;That's a lota money.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Then I don't know why you're here. I'm sorry, but I can't help you any further.&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

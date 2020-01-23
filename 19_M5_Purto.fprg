@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-29 06:12:49 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzQ7MjAxOS0xMi0wMzswNzo1Nzo0MyBBTTsyMjA0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzQ7MjAxOS0xMi0wMzswODoyNjowNCBBTTsxOzIzMDY="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMTktMTItMjk7MDY6MTI6NDkgUE07NDsyOTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <declare name="number3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Give me three numbers and let's see which one's the smallest one.&quot;" newline="True"/>
+            <output expression="&quot;What is your first number?&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;Your second one?&quot;" newline="True"/>
+            <input variable="number2"/>
+            <output expression="&quot;Last one please. ^_^&quot;" newline="True"/>
+            <input variable="number3"/>
+            <if expression="number3 &lt; number2">
+                <then>
+                    <output expression="number3" newline="True"/>
+                    <output expression="&quot;That's your smallest number out of the three.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="number2 &lt; number1">
+                        <then>
+                            <output expression="number2" newline="True"/>
+                            <output expression="&quot;That's your smallest number out of the three.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="number1 &lt; number3">
+                                <then>
+                                    <output expression="number1" newline="True"/>
+                                    <output expression="&quot;That's your smallest number out of the three.&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

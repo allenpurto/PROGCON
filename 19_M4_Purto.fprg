@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-29 10:41:57 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzQ7MjAxOS0xMS0yOTswODoxNjowMSBBTTsyMjAx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzQ7MjAxOS0xMS0yOTswODo0NjoxNyBBTTsxOzIzMTk="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMTktMTItMjk7MTA6NDE6NTcgQU07MjsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your grade. Let's hope that you passed! ^_^&quot;" newline="True"/>
+            <input variable="number"/>
+            <if expression="number &gt;= 95">
+                <then>
+                    <output expression="&quot;Your grade is 4.0; your house must be proud of you&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="number &gt;= 91">
+                        <then>
+                            <output expression="&quot;Your grade is 3.5 dear Jedi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="number &gt;= 87">
+                                <then>
+                                    <output expression="&quot;Your grade is 3.0; not bad for a Muggle&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="number &gt;= 83">
+                                        <then>
+                                            <output expression="&quot;Your grade is 2.5 young padawan&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="number &gt;= 79">
+                                                <then>
+                                                    <output expression="&quot;Your grade is 2.0. Getting a little 2 (too) close to 1 there.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="number &gt;= 75">
+                                                        <then>
+                                                            <output expression="&quot;Man, I wish I can at least get 1.5K for Christmas. You get 1.5 too ^_^&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="number &gt;= 70">
+                                                                <then>
+                                                                    <output expression="&quot;Wew, you made it with a single (1.0) heart left. Talk about a clutch there.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="number &lt;= 70">
+                                                                        <then>
+                                                                            <output expression="&quot;YA HAHA R!!! Hey there matey, ready to meet Davy Jones and his Kraken?&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else/>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

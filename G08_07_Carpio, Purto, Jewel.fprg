@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 07:59:31 AM"/>
+        <attribute name="created" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMTc7MDM6MzY6NTkgQU07Mjg1MA=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzE7MjAyMC0wMS0xNzswODo0NToyMiBBTTsyOzIzMDA="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMjM7MDc6NTk6MzEgQU07NDsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hey there, I'm a program created by 3 deities: Carpio, Purto, and Tigson.&quot;" newline="True"/>
+            <output expression="&quot;I am here to add numbers, a lot of numbers for you.&quot;" newline="True"/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="repeat" type="Boolean" array="False" size=""/>
+            <declare name="add" type="Integer" array="False" size=""/>
+            <assign variable="add" expression="0"/>
+            <declare name="answer" type="String" array="False" size=""/>
+            <assign variable="repeat" expression="true"/>
+            <while expression="repeat = true">
+                <output expression="&quot;Please add your number.&quot;" newline="True"/>
+                <input variable="number"/>
+                <if expression="number &gt;= -998">
+                    <then>
+                        <output expression="&quot;Type add to add another number. If not, input anything.&quot;" newline="True"/>
+                        <input variable="answer"/>
+                        <if expression="answer = &quot;add&quot; || answer = &quot;Add&quot;">
+                            <then>
+                                <assign variable="repeat" expression="true"/>
+                            </then>
+                            <else>
+                                <assign variable="repeat" expression="false"/>
+                                <output expression="&quot;Proceeding to check out then. Carry along.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Please put any number higher than -999.&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+                <assign variable="add" expression="add + number"/>
+            </while>
+            <output expression="add" newline="True"/>
+            <output expression="&quot;that's your sum right there ^_^&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

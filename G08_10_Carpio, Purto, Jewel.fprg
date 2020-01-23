@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:47:14 AM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtRElRVktPRDk7MjAyMC0wMS0wMzswNToyODozNiBQTTsyODE5"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtRElRVktPRDk7MjAyMC0wMS0wMzswNTo1MzowOSBQTTsyO3VzZXI7TEFQVE9QLURJUVZLT0Q5OzIwMTktMTItMjg7MTA6MDg6MjcgUE07QWxscnVuX0F2ZSxNaW4sTWF4LmZwcmc7ODAyNg=="/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtRElRVktPRDk7MjAyMC0wMS0xNzswNTo1OTowMCBBTTsyOzI5MTM="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMTc7MDY6NDI6NDIgQU07MjsyOTUx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzE7MjAyMC0wMS0xNzswODo0NzoxNCBBTTsyOzIzMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hey there, I'm a program created by 3 deities: Carpio, Purto, and Tigson.&quot;" newline="True"/>
+            <output expression="&quot;I am here to find the average, minimum, and maximum of 10 numbers for you.&quot;" newline="True"/>
+            <output expression="&quot;Please input the 10 numbers that you would like to find the average, minimum, and maximum for.&quot;" newline="True"/>
+            <declare name="average" type="Integer" array="False" size=""/>
+            <declare name="minimum" type="Integer" array="False" size=""/>
+            <declare name="maximum" type="Integer" array="False" size=""/>
+            <declare name="input" type="Integer" array="True" size="10"/>
+            <declare name="numbers" type="Integer" array="False" size=""/>
+            <for variable="numbers" start="0" end="9" direction="inc" step="1">
+                <input variable="input [numbers]"/>
+            </for>
+            <assign variable="minimum" expression="input[0]"/>
+            <assign variable="maximum" expression="input[0]"/>
+            <assign variable="average" expression="0"/>
+            <for variable="numbers" start="0" end="9" direction="inc" step="1">
+                <if expression="input [numbers] &lt; minimum">
+                    <then>
+                        <assign variable="minumum" expression="input [numbers]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="input [numbers] &gt; maximum">
+                    <then>
+                        <assign variable="maximum" expression="input [numbers]"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="average" expression="average + input [numbers]"/>
+            </for>
+            <assign variable="average" expression="average / 10"/>
+            <output expression="&quot;Your average is:&quot;" newline="False"/>
+            <output expression="average" newline="True"/>
+            <output expression="&quot;Your mimum is:&quot;" newline="False"/>
+            <output expression="minimum" newline="True"/>
+            <output expression="&quot;Your maximum is:&quot;" newline="False"/>
+            <output expression="maximum" newline="True"/>
+            <output expression="&quot;Thank you for using our machine. Have a nice day! ^_^&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

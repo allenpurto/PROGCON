@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="allen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 07:56:48 AM"/>
+        <attribute name="created" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMTY7MDE6NDU6MzkgQU07Mjg0NQ=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzE7MjAyMC0wMS0xNzswODo0NDoyMSBBTTsyOzIyOTg="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMjM7MDc6NTY6NDggQU07ODsyOTY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hey there, I'm a program created by 3 deities: Carpio, Purto, and Tigson.&quot;" newline="True"/>
+            <output expression="&quot;I am here to compute your discounts for you.&quot;" newline="True"/>
+            <declare name="originalprice" type="Real" array="False" size=""/>
+            <declare name="discount" type="Integer" array="False" size=""/>
+            <declare name="discountedprice" type="Real" array="False" size=""/>
+            <declare name="finalamount" type="Real" array="False" size=""/>
+            <output expression="&quot;May I know what is your original price? Please type it down.&quot;" newline="True"/>
+            <input variable="originalprice"/>
+            <output expression="&quot;What is the discount of your original price?&quot;" newline="True"/>
+            <input variable="discount"/>
+            <assign variable="discountedprice" expression="originalprice * (discount*0.01)"/>
+            <output expression="&quot;You will save&quot;" newline="True"/>
+            <output expression="discountedprice" newline="True"/>
+            <assign variable="finalamount" expression="originalprice - discountedprice"/>
+            <output expression="&quot;Which means you only have to pay&quot;" newline="True"/>
+            <output expression="finalamount" newline="True"/>
+            <output expression="&quot;Naks, may na save siya.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

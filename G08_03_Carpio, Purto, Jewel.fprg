@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 07:56:17 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMjA7MjAyMC0wMS0xNzswODowODo0MCBBTTsyMTg4"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjA7MjAyMC0wMS0xNzswODo1NDowNSBBTTs0OzIzMDE="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMjM7MDc6NTY6MTcgQU07MzsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi this is a program made by Briane, Allen and Jewel&quot;" newline="True"/>
+            <output expression="&quot;this program is about converting the feet to inches&quot;" newline="True"/>
+            <declare name="Feet" type="Integer" array="False" size=""/>
+            <declare name="inches" type="Integer" array="False" size=""/>
+            <declare name="output" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the feet so that we can convert it into inches?&quot;" newline="True"/>
+            <input variable="feet"/>
+            <assign variable="output" expression="feet * 12"/>
+            <output expression="output" newline="True"/>
+            <output expression="&quot;thanks for using our machine! ^_^&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

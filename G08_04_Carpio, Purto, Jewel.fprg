@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:43:36 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTY7MjAyMC0wMS0wNzswODoyNToxOCBBTTsyMTk2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTY7MjAyMC0wMS0wNzswOTowMDowNSBBTTsxOzIyOTQ="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjA7MjAyMC0wMS0xNzswODo0MzozNiBBTTsxOzIzMDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello Goodmorning Maam/Sir, this program was made by Allen, Briane and Jewel, this program is about converting the degree celsius into fahrenheit&quot;" newline="True"/>
+            <declare name="C" type="Real" array="False" size=""/>
+            <declare name="F" type="Real" array="False" size=""/>
+            <output expression="&quot;please enter the Celsius Temperate so that we can convert it into Fahrenheit?&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="F" expression="C*9/5 + 32"/>
+            <output expression="C &amp; &quot;Celsius is &quot; &amp; F &amp; &quot;Fahrenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

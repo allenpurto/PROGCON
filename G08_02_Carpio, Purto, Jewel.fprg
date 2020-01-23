@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 07:56:03 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTY7MjAyMC0wMS0wNzswOTowNTozNCBBTTsyMTkz"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTY7MjAyMC0wMS0wNzswOToxMzo1MSBBTTsxOzIyOTk="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjA7MjAyMC0wMS0xNzswODo1MzoyNCBBTTsxOzIyOTg="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzE7MjAyMC0wMS0xNzswOToyNjowNyBBTTsxOzIzMDI="/>
+        <attribute name="edited" value="YWxsZW47TEFQVE9QLUFBRzFFSkhUOzIwMjAtMDEtMjM7MDc6NTY6MDMgQU07MjsyOTUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Goodmorning, this program was made by Allen, Briane and Jewel&quot;" newline="True"/>
+            <output expression="&quot;this program is about identifying the age of a person: based on the year of their birth&quot;" newline="True"/>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <assign variable="answer" expression="0"/>
+            <output expression="&quot;please enter the year of your birth&quot;" newline="True"/>
+            <input variable="year"/>
+            <if expression="answer &lt;= 2020">
+                <then>
+                    <assign variable="age" expression="2020 - year"/>
+                </then>
+                <else>
+                    <output expression="&quot;you're not alive yet&quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <output expression="age" newline="True"/>
+            <output expression="&quot;years young&quot;" newline="True"/>
+            <output expression="&quot;thank you for using our machine! ^_^&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
